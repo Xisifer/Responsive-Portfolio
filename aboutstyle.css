@@ -1,0 +1,288 @@
+#topframe-container {
+    background-color:white;
+    position:relative;
+    border-bottom: 2px solid grey;
+    height:90px;
+    top:0;
+    max-width:100%;
+}
+
+
+#topframe {
+    width:85%;
+    margin:0 auto;
+}
+
+#topframe-content {
+    width:960px;
+    margin:0 auto;
+}
+
+
+
+#topframe-links {
+    /* float:right; */
+    display: flex;
+    padding-top: 25px;
+    vertical-align:middle;
+    text-size-adjust:13px;
+    color:gray;
+    justify-content:flex-end;
+
+
+}
+
+
+#topframe-about {
+    left: 20px;
+    border-right: 1px solid gray;
+    padding-right:20px;
+}
+
+
+#topframe-portfolio {
+    border-right: 1px solid gray;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#topframe-contact {
+
+    padding-left: 20px;
+}
+
+
+.navbar {
+    padding: 0 1rem;
+}
+
+#nameplate {
+    /* border: 5px solid red; */
+    padding: 10 10 0 10;
+    background-color:teal;
+    color:white;
+    width: 250px;
+    height:90px;
+    float:left;
+    text-align:center;
+    margin:0 auto;
+    font-size:36px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+/* End of Topbar stuff */
+
+
+
+/* Beginning of Portfolio page CSS content */
+
+#content {
+    font-family: sans-serif;
+    max-width:85%;
+    background-color: white;
+    height:auto;
+    /* text-align:center; */
+    margin:35px auto 0 auto;
+    padding-left:30px;
+    padding-right:30px;
+    border: 1px solid grey;
+} 
+
+
+body {
+    margin:auto;
+    padding:auto;
+   
+}
+
+ #aboutme {
+     font-family: serif;
+    /* float:left; */
+    color:teal;
+    font-size:36px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-weight: bold;
+} 
+
+/* #aboutme::after {
+    content: "";
+    clear: both;
+    display: table;
+} */
+
+
+#divider {
+    margin-bottom: 3px solid gray 903px;
+    /* padding-bottom: 903px; */
+}
+
+#portrait {
+    float:left;
+    /* padding-top: 40px; */
+    padding-right:25px;
+}
+
+
+#hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  #paragraphtext {
+      color:gray;
+      font-size:16px;
+      line-height:25px;
+  }
+
+  #text1 {
+    left:10px;
+    z-index 1;
+}
+
+#text2 {
+    right:384px;
+    z-index 2;
+}
+
+#text3 {
+    right:96px;
+    z-index 3;
+}
+
+  /* End of Portfolio Page Content CSS */
+
+
+
+
+.image {
+    position:relative;
+    padding:5px;
+    z-index 0;
+}
+
+h2 span {
+    color:white;
+    font: bold 24px;
+    letter-spacing: -1px;
+    background: rgb(0,0,0); /* fallback color */
+    background: rgba(0,0,0, 0.7);
+    position:absolute;
+    padding: 10px;
+    top:200px;
+    left:0;
+    width:100%;
+}
+
+.text-block {
+    position:absolute;
+    bottom:20px;
+    width:275px;
+    text-align:center;
+    background-color:teal;
+    color:white;
+    /* padding:20 auto 20 auto; */
+    padding-top: 20px;
+    padding-left: auto;
+    padding-right: auto;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER CSS */
+
+  #footer {
+    /* padding-bottom: 90px; */
+    position:fixed; 
+    border-top: 8px solid teal;
+    background-color:dimgrey;
+    height:60px;
+    text-align:center;
+    color:white;
+    bottom:0;
+    width:100%;
+}
+
+
+
+
+
+
+
+
+
+/* Responsive sizing section */
+
+
+/* Mobile layout shows a red background */
+@media only screen and (max-width:640px) {
+    body {
+        /* background-color:#F09A9D; Red */
+    }
+    #nameplate {
+        width:100%;
+    }
+    #topframe {
+        width:100%;
+    }
+    #topframe-links {
+        /* float:none; */
+        width:100%;
+        padding-top:10px;
+        padding-bottom:10px;
+        background-color:white;
+        justify-content:center;
+        
+    }
+    #portrait {
+        max-width:106%;
+        float:none;
+        text-align:center;
+        padding-right:0px;
+    }
+    #content {
+        margin-top:65px;
+    }
+    img {
+        width: -webkit-fill-available;
+    }
+}
+
+
+/* Tablet layout shows a yellow background */
+@media only screen and (min-width:641px) and (max-width:768px) {
+    body {
+        background-color:#F5CF8E; /* Yellow */
+    }
+}
+
+/* Desktop layout shows a blue background */
+@media only screen and (min-width:769px) and (max-width:960px) {
+    body {
+        background-color:#B2D6FF; /* Blue */
+    }
+}
+
+
+/* Target Sizes
+Mobile: 640
+Tablet: 768
+Desktop: 960 */
+
+/* Content Div contains everything centered
+Float can be used to put things to the left or right of the centered area */
