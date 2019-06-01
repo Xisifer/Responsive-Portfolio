@@ -1,16 +1,14 @@
-#topframe-container {
+
+
+
+#topframe {
     background-color:white;
     position:relative;
     border-bottom: 2px solid grey;
     height:90px;
     top:0;
     max-width:100%;
-}
 
-
-#topframe {
-    width:85%;
-    margin:0 auto;
 }
 
 #topframe-content {
@@ -21,13 +19,12 @@
 
 
 #topframe-links {
-    /* float:right; */
+    float:right;
     display: flex;
     padding-top: 25px;
     vertical-align:middle;
     text-size-adjust:13px;
     color:gray;
-    justify-content:flex-end;
 
 
 }
@@ -82,8 +79,8 @@
 
 #content {
     font-family: sans-serif;
-    max-width:85%;
-    background-color: white;
+    max-width:960px;
+
     height:auto;
     /* text-align:center; */
     margin:35px auto 0 auto;
@@ -141,25 +138,118 @@ body {
       line-height:25px;
   }
 
-
-/* 
-
-#text1 {
-    position:absolute;
-
+  #text1 {
+    left:10px;
+    z-index 1;
 }
 
 #text2 {
-    position:absolute;
+    right:384px;
+    z-index 2;
 }
 
 #text3 {
-    position:absolute;
-} */
+    right:96px;
+    z-index 3;
+}
 
   /* End of Portfolio Page Content CSS */
 
-  h2 span {
+
+
+
+
+
+/* Beginning of Contact Form CSS */
+#name-input {
+    color:white;
+    padding-bottom:10px;
+}
+
+#email-input {
+    color:gray;
+    padding-bottom:10px;
+}
+
+#message-input {
+    color:gray;
+    padding-bottom:10px;
+}
+
+
+.btn btn-info{
+    color:#fff;
+    background-color:#5bc0de;
+}
+
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+  }
+  
+  form div + div {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* To make sure that all labels have the same size and are properly aligned */
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+  }
+  
+  input, textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* To give the same size to all text fields */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* To harmonize the look & feel of text field border */
+    border: 1px solid #999;
+  }
+  
+  input:focus, textarea:focus {
+    /* To give a little highlight on active elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* To give enough room to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* To position the buttons to the same position of the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 44%;
+    margin-right:44%
+  }
+
+
+
+
+
+/* End of Contact Form CSS */
+
+.image {
+    position:relative;
+    padding:5px;
+    z-index 0;
+}
+
+h2 span {
     color:white;
     font: bold 24px;
     letter-spacing: -1px;
@@ -172,33 +262,18 @@ body {
     width:100%;
 }
 
-
-
-.image {
-    padding:5px;
-    max-width:85%;
-    position:relative;
-}
-
-
-.text-image {
-    position:relative;
-    display:inline-block;
-}
-
-
 .text-block {
     position:absolute;
     bottom:20px;
-    width:100%;
+    width:275px;
     text-align:center;
     background-color:teal;
     color:white;
-    padding:20px auto 20px auto;
+    /* padding:20 auto 20 auto; */
     padding-top: 20px;
     padding-left: auto;
     padding-right: auto;
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
 }
 
 
@@ -232,40 +307,20 @@ body {
 
 
 
+
 /* Responsive sizing section */
 
 
 /* Mobile layout shows a red background */
 @media only screen and (max-width:640px) {
     body {
-        /* background-color:#F09A9D; Red */
+        background-color:#F09A9D; /* Red */
     }
     #nameplate {
         width:100%;
     }
-    #topframe {
-        width:100%;
-    }
     #topframe-links {
-        /* float:none; */
         width:100%;
-        padding-top:10px;
-        padding-bottom:10px;
-        background-color:white;
-        justify-content:center;
-        
-    }
-    #portrait {
-        max-width:100%;
-        float:none;
-        text-align:center;
-        padding-right:0px;
-    }
-    #content {
-        margin-top:65px;
-    }
-    img {
-        /* width: -webkit-fill-available; */
     }
 }
 

@@ -78,8 +78,6 @@
 
 
 
-/* Beginning of Portfolio page CSS content */
-
 #content {
     font-family: sans-serif;
     max-width:85%;
@@ -97,6 +95,12 @@ body {
     margin:auto;
     padding:auto;
    
+}
+
+
+body {
+    margin:auto;
+    padding:auto;
 }
 
  #aboutme {
@@ -121,7 +125,7 @@ body {
     /* padding-bottom: 903px; */
 }
 
-#portrait {
+#image {
     float:left;
     /* padding-top: 40px; */
     padding-right:25px;
@@ -141,25 +145,119 @@ body {
       line-height:25px;
   }
 
-
-/* 
-
-#text1 {
-    position:absolute;
-
+  #text1 {
+    left:10px;
+    z-index 1;
 }
 
 #text2 {
-    position:absolute;
+    right:384px;
+    z-index 2;
 }
 
 #text3 {
-    position:absolute;
-} */
+    right:96px;
+    z-index 3;
+}
 
   /* End of Portfolio Page Content CSS */
 
-  h2 span {
+
+
+
+
+
+/* Beginning of Contact Form CSS */
+#name-input {
+    color:gray;
+    padding-bottom:10px;
+}
+
+#email-input {
+    color:gray;
+    padding-bottom:10px;
+}
+
+#message-input {
+    color:gray;
+    padding-bottom:10px;
+}
+
+
+.btn btn-info{
+    color:#fff;
+    background-color:#5bc0de;
+}
+
+form {
+    margin: 0 auto;
+    width: 75%;
+    padding: 1em;
+  }
+  
+  form div + div {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* To make sure that all labels have the same size and are properly aligned */
+    display: inline-block;
+    width: 90%;
+    padding-bottom:5px;
+    /* text-align: right; */
+  }
+  
+  input, textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* To give the same size to all text fields */
+    width: 90%;
+    box-sizing: border-box;
+  
+    /* To harmonize the look & feel of text field border */
+    border: 1px solid #999;
+  }
+  
+  input:focus, textarea:focus {
+    /* To give a little highlight on active elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* To give enough room to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* To position the buttons to the same position of the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 44%;
+    margin-right:44%
+  }
+
+
+
+
+
+/* End of Contact Form CSS */
+
+.image {
+    position:relative;
+    padding:5px;
+    z-index 0;
+}
+
+h2 span {
     color:white;
     font: bold 24px;
     letter-spacing: -1px;
@@ -172,36 +270,19 @@ body {
     width:100%;
 }
 
-
-
-.image {
-    padding:5px;
-    max-width:85%;
-    position:relative;
-}
-
-
-.text-image {
-    position:relative;
-    display:inline-block;
-}
-
-
 .text-block {
     position:absolute;
     bottom:20px;
-    width:100%;
+    width:275px;
     text-align:center;
     background-color:teal;
     color:white;
-    padding:20px auto 20px auto;
+    /* padding:20 auto 20 auto; */
     padding-top: 20px;
     padding-left: auto;
     padding-right: auto;
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
 }
-
-
 
 
 
@@ -224,7 +305,6 @@ body {
     bottom:0;
     width:100%;
 }
-
 
 
 
@@ -256,7 +336,7 @@ body {
         
     }
     #portrait {
-        max-width:100%;
+        max-width:106%;
         float:none;
         text-align:center;
         padding-right:0px;
@@ -265,7 +345,7 @@ body {
         margin-top:65px;
     }
     img {
-        /* width: -webkit-fill-available; */
+        width: -webkit-fill-available;
     }
 }
 
